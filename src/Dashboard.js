@@ -21,7 +21,7 @@ function Dashboard() {
                         </div>
                     </div>
                     <div className="product-image-container">
-                        <img src="steel.jpeg" alt="Steel beam" />
+                        <img src="https://myqrcode.com/wp-content/uploads/2024/04/QR-Codes-on-Stainless-Steel_Main-Illustration_11zon.jpg" alt="Steel beam" />
                     </div>
                     <p className="card-description">
                         This Digital Product Passport(DPP) provides comprehensive, verifiable information about the steel's entire lifecycle, ensuring transparency and trust.
