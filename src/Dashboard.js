@@ -11,10 +11,10 @@ function Dashboard() {
             <div className="main-content">
                 <div className="card">
                     <div className="card-header">
-                        <h1>High-Strength Low-Alloy Steel Beam (HSLA-B)</h1>
+                        <h1>High-Strength Low-Alloy Steel (HSLA-S)</h1>
                     </div>
                     <div className="card-header-row">
-                        <p>DPP-STLB-HSLA-001-A</p>
+                        <p>DPP-STL-HSLA-001-A</p>
                         <div className="verified-badge">
                             <MdVerified />
                             <p>Blockchain Verified</p>
