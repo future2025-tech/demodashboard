@@ -4,6 +4,7 @@ import { MdOutlineVerifiedUser, MdVerified } from "react-icons/md";
 import EnvironmentalImpactChart from './EnvironmentalImpactChart';
 import GaugeChart from 'react-gauge-chart';
 import './Dashboard.css';
+import SteelCompositionPieChart from './SteelCompositionPieChart';
 
 function Dashboard() {
     return (
@@ -13,6 +14,7 @@ function Dashboard() {
                     <div className="card-header">
                         <h1>High-Strength Low-Alloy Steel (HSLA-S)</h1>
                     </div>
+                    
                     <div className="card-header-row">
                         <p>DPP-STL-HSLA-001-A</p>
                         <div className="verified-badge">
@@ -50,6 +52,7 @@ function Dashboard() {
                 <div className="card">
                     <div className="card-header">
                         <h2>Lifecycle Events</h2>
+                    
                     </div>
                     {[
                         { date: "11-12-2024", time: "09:30 AM UTC", text: "Manufacturing Completed: Final inspection and quality control.", verified: true },
@@ -84,7 +87,7 @@ function Dashboard() {
                     <div className="card-header">
                         <h2>Lifecycle Journey</h2>
                     </div>
-                    <img src="lifecyclemap.png" alt="Lifecycle journey" className="lifecycle-image" />
+                    <img src="https://tracecircle.com/wp-content/uploads/2025/08/mapp-dashboard.jpg" alt="Lifecycle journey" className="lifecycle-image" />
                 </div>
             </div>
             
@@ -115,31 +118,12 @@ function Dashboard() {
                 
                 <div className="card">
                     <div className="card-header1">
-                        <h2>Composition (Chemical Analysis)</h2>
+                        <h2>Chemical Composition</h2>
                     </div>
-                    <div className="two-column-grid">
-                        <div>
-                            <p>Iron(Fe)</p>
-                            <p className="bold-text">98.1%</p>
-                            <p>Manganese (Mn)</p>
-                            <p className="bold-text">1.1%</p>
-                            <p>Sulphur (S)</p>
-                            <p className="bold-text">0.015%</p>
-                            <p>Niobium (Nb)</p>
-                            <p className="bold-text">0.03%</p>
-                        </div>
-                        <div>
-                            <p>Carbon (C)</p>
-                            <p className="bold-text">0.18%</p>
-                            <p>Silicon (Si)</p>
-                            <p className="bold-text">0.3%</p>
-                            <p>Phosphorus (P)</p>
-                            <p className="bold-text">0.02%</p>
-                            <p>Vanadium (V)</p>
-                            <p className="bold-text">0.01%</p>
-                        </div>
-                    </div>
+                    <SteelCompositionPieChart></SteelCompositionPieChart>
                 </div>
+                
+
                 
                 <div className="card">
                     <div className="card-header1">
@@ -163,53 +147,9 @@ function Dashboard() {
                     </div>
                 </div>
                 
-                <div className="card">
-                    <div className="card-header1">
-                        <h2>Certifications & Compliance</h2>
-                    </div>
-                    <div className="two-column-grid">
-                        <div>
-                            <p>ISO 9001</p>
-                            <p className="bold-text">Certified (Quality Management)</p>
-                            <p>CE Marking</p>
-                            <p className="bold-text">Compliance with EU standards</p>
-                            <p>Responsible Steel</p>
-                            <p className="bold-text">Pending Verification</p>
-                        </div>
-                        <div>
-                            <p>ISO 14001</p>
-                            <p className="bold-text">Certified (Environmental Management)</p>
-                            <p>LEED Contribution</p>
-                            <p className="bold-text">MRc2 (Construction Waste Management)</p>
-                            <p>Conflict Minerals Policy</p>
-                            <p className="bold-text">Compliant</p>
-                        </div>
-                    </div>
-                </div>
                 
-                <div className="card">
-                    <div className="card-header1">
-                        <h2>Warranty & Support</h2>
-                    </div>
-                    <div className="two-column-grid">
-                        <div>
-                            <p>Structural Integrity</p>
-                            <p className="bold-text">10 Years Limited Warranty</p>
-                            <p>Corrosion Resistance(Coated)</p>
-                            <p className="bold-text">5 Years Warranty</p>
-                            <p>Manufacturing Defects</p>
-                            <p className="bold-text">Covered under Standard Warranty</p>
-                        </div>
-                        <div>
-                            <p>On-Site Inspection Support</p>
-                            <p className="bold-text">Available on Request</p>
-                            <p>Installation Guidance</p>
-                            <p className="bold-text">Provided with Purchase</p>
-                            <p>Extended Warranty Option</p>
-                            <p className="bold-text">Upto 15 years(Optional)</p>
-                        </div>
-                    </div>
-                </div>
+                
+                
             </div>
         </div>
     );
